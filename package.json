@@ -1,12 +1,19 @@
 {
   "name": "release-announcement-banner",
   "version": "1.0.0",
-  "description": "",
+  "description": "For blog posts where we announce a new version of a Cucumber tool",
+  "private": true,
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "node ./index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "David Goss",
+  "license": "MIT",
+  "devDependencies": {
+    "chalk": "^5.0.1",
+    "inquirer": "^8.2.2",
+    "ora": "^6.1.0",
+    "puppeteer": "^13.5.2"
+  }
 }

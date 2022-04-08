@@ -8,8 +8,14 @@
 <body>
     <main style="width:1000px;height:522px" class="font-mono bg-blue-600 text-white flex flex-col justify-center items-center gap-4 m-8">
         <img alt="" src="logo.svg" style="width:150px"/>
-        <h1 class="text-4xl">@cucumber/cucumber</h1>
-        <p class="text-6xl">v8.0.0</p>
+        <h1 id="tool" class="text-4xl">tool</h1>
+        <p id="version" class="text-6xl">version</p>
     </main>
+    <script>
+        const searchParams = new URLSearchParams(window.location.search)
+        document.querySelector('#tool').textContent = searchParams.get('tool')
+        document.querySelector('#version').textContent = searchParams.get('version')
+        document.querySelector('main').classList.add('is-finished')
+    </script>
 </body>
 </html>
