@@ -13,7 +13,7 @@ const { tool, version } = await inquirer.prompt([
     {
         name: 'version',
         type: 'string',
-        message: "Which version that we've released?",
+        message: "Which version have we released?",
         default: 'v1.2.3'
     }
 ])
