@@ -12,7 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "chalk": "^5.0.1",
-    "inquirer": "^8.2.2",
+    "inquirer": "^9.0.0",
     "ora": "^6.1.0",
     "puppeteer": "^13.5.2"
   }
